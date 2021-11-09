@@ -16,6 +16,13 @@ const peloton = {
   },
   handlebarHeight: "N",
   powerON: false,
+
+  togglePower: function (powerStatus) {
+    this.powerON = powerStatus;
+  },
+  newSeatHeight: function (seatHeight) {
+    this.seat.height = seatHeight;
+  },
 };
 
 console.log("The peloton object: ", peloton);
