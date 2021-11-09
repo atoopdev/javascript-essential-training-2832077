@@ -21,4 +21,11 @@ const backpack = {
   },
 };
 
+// dot notation
 console.log("The backpack object:", backpack);
+console.log("The pocketNum value: ", backpack.pocketNum);
+
+// bracket notation
+var query = "pocketNum";
+// note passing variable in only works in bracket notation
+console.log("The pocketNum value: ", backpack[query]);
