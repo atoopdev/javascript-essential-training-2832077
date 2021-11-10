@@ -7,3 +7,22 @@
  * - Find an object that has another object inside of it to create a nested object.
  * - Test your objects in the browser console by accessing the entire object and its specific properties.
  */
+
+const peloton = {
+  name: "Amanda's Peloton",
+  seat: {
+    height: 16,
+    depth: "A",
+  },
+  handlebarHeight: "N",
+  powerON: false,
+
+  togglePower: function (powerStatus) {
+    this.powerON = powerStatus;
+  },
+  newSeatHeight: function (seatHeight) {
+    this.seat.height = seatHeight;
+  },
+};
+
+console.log("The peloton object: ", peloton);
