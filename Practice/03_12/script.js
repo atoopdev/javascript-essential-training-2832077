@@ -6,3 +6,10 @@
  * - Create several objects using the class.
  * - Test the objecs by calling their properties and using their methods in the console.
  */
+
+// create a peloton object
+
+import Peloton from "./Peloton.js";
+
+const KatiesPeloton = new Peloton("Katie's Peloton", 17, "B", "M", true);
+console.log("The peloton object: ", KatiesPeloton);
