@@ -8,7 +8,9 @@ class Peloton {
     seatHeight,
     seatDepth,
     handlebarHeight,
-    powerOn
+    powerOn,
+    // for use with global object
+    purchaseDate
   ) {
     // define properties
     this.name = name;
@@ -18,6 +20,8 @@ class Peloton {
     };
     this.handlebarHeight - handlebarHeight;
     this.powerOn = powerOn;
+    // for use with global object
+    this.purchaseDate = purchaseDate;
   }
   // add methods
   togglePower(powerStatus) {
@@ -28,6 +32,14 @@ class Peloton {
   }
   newSeatDepth(seat_d) {
     this.seat.depth = seat_d;
+  }
+  pelotonAge() {
+    let now = new Date();
+    let acquired = new Date(this.purchaseDate);
+    //   elapsed time in seconds
+    let elapsed = now - acquired;
+    let daysSincePurchase = Math.floor(elapsed / (1000 * 3600 * 24));
+    return daysSincePurchase;
   }
 }
 
