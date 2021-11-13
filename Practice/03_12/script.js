@@ -10,6 +10,7 @@
 // create a peloton object
 
 import Peloton from "./Peloton.js";
+import Book from "./book.js";
 
 const KatiesPeloton = new Peloton(
   "Katie's Peloton",
@@ -22,3 +23,15 @@ const KatiesPeloton = new Peloton(
 console.log("The peloton object: ", KatiesPeloton);
 console.log("Purchase date: ", KatiesPeloton.purchaseDate);
 console.log("Days since purchase: ", KatiesPeloton.pelotonAge());
+
+const LuckyShoppingManual = new Book(
+  "The Lucky Shopping Manual",
+  "Kim France",
+  "2003",
+  319,
+  true,
+  19,
+  true
+);
+
+console.log("Book item: ", LuckyShoppingManual);
